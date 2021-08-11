@@ -17,10 +17,10 @@
     margin: 1.5rem;
     border: 3px solid white;
     border-radius: 15px;
-    /* overflow-x: hidden !important; */
+    overflow-x: hidden !important;
 }
 
-@media screen and (max-width: 600 px) {
+@media screen and (max-width: 600px) {
     .image {
         margin-left: auto;
         margin-right: auto;
