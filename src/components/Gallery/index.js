@@ -3,29 +3,31 @@ import imageJSON from './gallery';
 import './style.css';
 
 function Gallery() {
-    console.log('imageJSON: ', + imageJSON);
+    // console.log('imageJSON: ', + imageJSON);
 
     const [imageArr, setImageArr] = useState(imageJSON.images);
 
     // useEffect(() => {
     //     console.log('imageJSON: ', + imageJSON);
-    //     setImageArr(imageJSON);
+    //     setImageArr(imageJSON.images);
     //     console.log(imageJSON)
     // }, [])
+
+    
 
     return (
         <main>
             <div className='container images-wrapper'>
                 <div className='row'>
                     {imageArr.imageArray.map(image => {
-                        console.log(image);
+                        console.log('./images/' + image.image);
                         return (
                             <div className='col-12 col-md-3 individual-wrapper'>
                                 <img className='image' src={'./images/' + image.image} alt='poorly-described-pic' />
                             </div>
                         )
                     })
-                    }
+                }
                 </div>
             </div>
         </main>
